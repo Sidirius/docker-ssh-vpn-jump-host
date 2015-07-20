@@ -1,12 +1,12 @@
 FROM ubuntu:14.04
-MAINTAINER Stefan Schwetschke <stefan@schwetschke.de>
+MAINTAINER Sven Hartmann <sid@sh87.net>
 
-ENV SSH_BASE_VERSION 2015-01-29
+ENV SSH_BASE_VERSION 2015-07-20
 
 RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
 
-ENV SSH_CONFIGURATION 2015-01-07
+ENV SSH_CONFIGURATION 2015-07-20
 
 RUN mkdir /ssh
 RUN mkdir /ssh.template
